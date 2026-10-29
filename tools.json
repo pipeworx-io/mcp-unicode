@@ -1,0 +1,54 @@
+[
+  {
+    "name": "char_info",
+    "description": "Inspect each character of a string (up to 64): Unicode code point (U+ hex + decimal), UTF-8 byte sequence, UTF-16 code units, HTML numeric entity, and general category. Keyless, offline.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "The text to inspect."
+        }
+      },
+      "required": [
+        "text"
+      ]
+    }
+  },
+  {
+    "name": "escape_string",
+    "description": "Escape a string. format = \"js\" (\\uXXXX), \"html\" (&#xNN;), \"url\" (percent-encoding), or \"all-nonascii\" (js-escape only non-ASCII). Keyless, offline.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "The text to escape."
+        },
+        "format": {
+          "type": "string",
+          "description": "js | html | url | all-nonascii (default js)."
+        }
+      },
+      "required": [
+        "text"
+      ]
+    }
+  },
+  {
+    "name": "unescape_string",
+    "description": "Unescape a string containing \\uXXXX / \\xNN / &#NN; / &#xNN; / percent-encoding back to plain text. Keyless, offline.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "The escaped text."
+        }
+      },
+      "required": [
+        "text"
+      ]
+    }
+  }
+]
