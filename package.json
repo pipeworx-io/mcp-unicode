@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-unicode",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Unicode character MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "unicode",
     "gatewaySlug": "unicode",
-    "sourceHash": "v1-fada40e004e8b1dcf0670c38f6f03c5944ea1fa85cb2137e4feb17a401c412fe",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-36db1d4bb301aee583fa3b421510e10e83755ebfa0e3602c786715f40937d291",
+    "sourceCommit": "ca52e7ed1e1ccad897c2da1b0fa105edc0bc3b2e"
   }
 }
